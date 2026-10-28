@@ -1,0 +1,18 @@
+{
+  "name": "@college-library/backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "googleapis": "^144.0.0",
+    "node-cron": "^3.0.3"
+  }
+}

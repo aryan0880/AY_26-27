@@ -1,0 +1,15 @@
+{
+  "name": "college-library-mvp",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": ["frontend", "backend"],
+  "scripts": {
+    "dev": "concurrently -n API,WEB -c blue,green \"npm run dev -w @college-library/backend\" \"npm run dev -w @college-library/frontend\"",
+    "build": "npm run build -w @college-library/frontend",
+    "start": "npm run start -w @college-library/backend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
